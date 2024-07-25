@@ -1,0 +1,149 @@
+# Build Folders (you can keep bin if you'd like to checkin those binaries)
+bin/
+obj/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific folders
+.vscode/
+.vscode/*
+.vscode/*/
+.vs
+
+# Auto-generated files
+*.designer.cs
+*.g.cs
+*.g.i.cs
+*_i.c
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Uncomment if you have a packages directory in your project root
+# packages/
+
+# Visual Studio cache files
+.vscode/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Configuration files
+appsettings.json
+appsettings.Development.json
+appsettings.Production.json
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# NCrunch
+*.ncrunch*
+.*crunch*.local.xml
+
+# IDEs
+.idea/
+.vscode/
+*.sln.ide
+
+# Files built by Visual Studio
+*.csproj.user
+*.userosscache
+
+# C++ files
+*.aps
+*.ncb
+*.sdf
+*.opendb
+*.vcxproj.*.user
+*.psess
+
+# RIA/Silverlight projects
+Generated_Code/
+
+# WCF projects
+ClientBin/
+
+# VSTS/Azure DevOps
+.vs/
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+*.sln.ide
+.idea/*
+
+# Backup & report files
+*.bak
+*.pdb
+*.pidb
+*.mdf
+*.ldf
+*.ndb
+*.ndf
+*.rdlc
+*.out
+*.log
+*.iobj
+*.ipdb
+*.tlog
+*.log*
+
+# Workspaces
+ipch/
+obj/
+pch/
+*.pch
+*.pdb
+*.obj
+*.lib
+*.dylib
+*.idb
+*.ipch
+*.exp
+*.exe
+*.ilk
+*.log
+*.map
+*.mdf
+*.ndb
+*.ndf
+*.pcap
+*.pyc
+*.pyo
+*.rsrc
+*.res
+*.sdf
+*.tds
+*.tlog
+*.vcxproj.*
+*.yml
+*.yaml
+*.Rproj.user
+*.DS_Store
+
+# Dependencies
+node_modules/
+
+# Log files
+*.log
