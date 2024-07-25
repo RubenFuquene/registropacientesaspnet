@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using pacientes.Data;
 using pacientes.Models;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace pacientes.Controllers
@@ -53,6 +54,23 @@ namespace pacientes.Controllers
         [HttpPost]
         public async Task<ActionResult<Paciente>> AddPaciente(Paciente nuevoPaciente)
         {
+            //Validar nombre vacio
+            if(nuevoPaciente.Nombre == "" || nuevoPaciente.Nombre == null)
+            {
+                return BadRequest("El nombre es obligatorio");
+            }
+
+            //Validar fecha nacimiento
+            if(nuevoPaciente.FechaNacimiento > DateTime.Today)
+            {
+                return BadRequest("Fecha de nacimiento no válida");
+            }
+
+            if(!Regex.IsMatch(nuevoPaciente.Email, "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$"))
+            {
+                return BadRequest("Correo electrónico invalido");
+            }
+
             _context.Pacientes.Add(nuevoPaciente);
             await _context.SaveChangesAsync();
 
